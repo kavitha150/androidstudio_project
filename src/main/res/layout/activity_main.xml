@@ -1,94 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
-    android:padding="24dp"
-    tools:context=".MainActivity">
-
-   <TextView
-        android:id="@+id/total_question"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Total Question"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="40dp"/>
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <TextView
-        android:id="@+id/question"
-        android:layout_width="385dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="160dp"
-        android:layout_marginBottom="115dp"
-        android:text="This will be question"
-        android:textColor="@color/white"
-        android:textSize="30dp"
-        android:layout_centerHorizontal="false"
-        android:textStyle="bold" />
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="50dp" />
 
     <LinearLayout
-        android:id="@+id/choice_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:background="@color/black">
 
-        <Button
-            android:id="@+id/ans_a"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:text="Ans A"
-            android:textColor="@color/black"
-            android:layout_marginTop="280dp"
-            android:textSize="25dp" />
-    <Button
-        android:id="@+id/ans_b"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/lb2"
+                style="@style/label"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/lb5"
+                style="@style/label"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/lb8"
+                style="@style/label" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginRight="5dp">
+
+            <TextView
+                android:id="@+id/lb3"
+                style="@style/label"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/lb6"
+                style="@style/label"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/lb9"
+                style="@style/label" />
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+
+        <TextView
+            android:id="@+id/lb1"
+            style="@style/label"
+            android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/lb4"
+                style="@style/label"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/lb7"
+                style="@style/label" />
+
+
+
+
+        </LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:text="Ans B"
+        android:text="Player 1, it's your turn"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="35dp"
         android:textColor="@color/black"
-        android:layout_marginTop="20dp"
-        android:textSize="25dp" />
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp" />
     <Button
-        android:id="@+id/ans_c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:text="Ans C"
-        android:textColor="@color/black"
-        android:layout_marginTop="15dp"
-        android:textSize="25dp" />
-
-    <Button
-        android:id="@+id/ans_d"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/white"
-        android:text="Ans D"
-        android:textColor="@color/black"
-        android:layout_marginTop="15dp"
-        android:textSize="25dp" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btn_submit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#1D83D3"
-        android:text="Submit"
-        android:layout_below="@+id/choice_layout"
-        android:textColor="@color/black"
-        android:layout_marginTop="40dp"
-        android:textSize="30dp" />
+        android:text="New Came"
+        android:textAllCaps="false"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:onClick="newGame"/>
 
 
-</RelativeLayout>
+</LinearLayout>
