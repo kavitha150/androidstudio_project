@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+   <TextView
+        android:id="@+id/total_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Question"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="385dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="115dp"
+        android:text="This will be question"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="false"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/choice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ans_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Ans A"
+            android:textColor="@color/black"
+            android:layout_marginTop="280dp"
+            android:textSize="25dp" />
+    <Button
+        android:id="@+id/ans_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Ans B"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp" />
+    <Button
+        android:id="@+id/ans_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Ans C"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/ans_d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Ans D"
+        android:textColor="@color/black"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1D83D3"
+        android:text="Submit"
+        android:layout_below="@+id/choice_layout"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>
